@@ -1,11 +1,64 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Single Responsibility", "1. Single Responsibility", "{1690CB38-CCDB-4F83-BE50-5149A938326C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Open Close", "2. Open Close", "{FF419CFF-2C42-4A67-A3C0-273C9579E442}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Liskov Substitution", "3. Liskov Substitution", "{B92C7308-AA54-4AF6-9DDC-A22534C6CD20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Interface Segregation", "4. Interface Segregation", "{EB91D695-2267-46DF-9E1E-94FFF912016D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Dependency Inversion", "5. Dependency Inversion", "{EEC06C71-ABBF-4A72-822E-2BA6724431C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibility", "SingleResponsibility\SingleResponsibility.csproj", "{7FCBF348-3679-461B-9689-0F4059431791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClose", "OpenClose\OpenClose.csproj", "{E4303266-06B0-4845-9084-842EDEC9F98E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovSubstitution", "LiskovSubstitution\LiskovSubstitution.csproj", "{FA6D30A7-1515-4673-B053-B2BFCEB176AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregation", "InterfaceSegregation\InterfaceSegregation.csproj", "{5C73B21B-66CF-4742-9A2F-60AC6E0CC31F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion", "DependencyInversion\DependencyInversion.csproj", "{83973FBE-B91B-4982-ABF4-791661C6FE3F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FCBF348-3679-461B-9689-0F4059431791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FCBF348-3679-461B-9689-0F4059431791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FCBF348-3679-461B-9689-0F4059431791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FCBF348-3679-461B-9689-0F4059431791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4303266-06B0-4845-9084-842EDEC9F98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4303266-06B0-4845-9084-842EDEC9F98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4303266-06B0-4845-9084-842EDEC9F98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4303266-06B0-4845-9084-842EDEC9F98E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6D30A7-1515-4673-B053-B2BFCEB176AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6D30A7-1515-4673-B053-B2BFCEB176AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6D30A7-1515-4673-B053-B2BFCEB176AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6D30A7-1515-4673-B053-B2BFCEB176AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C73B21B-66CF-4742-9A2F-60AC6E0CC31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C73B21B-66CF-4742-9A2F-60AC6E0CC31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C73B21B-66CF-4742-9A2F-60AC6E0CC31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C73B21B-66CF-4742-9A2F-60AC6E0CC31F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7FCBF348-3679-461B-9689-0F4059431791} = {1690CB38-CCDB-4F83-BE50-5149A938326C}
+		{E4303266-06B0-4845-9084-842EDEC9F98E} = {FF419CFF-2C42-4A67-A3C0-273C9579E442}
+		{FA6D30A7-1515-4673-B053-B2BFCEB176AD} = {B92C7308-AA54-4AF6-9DDC-A22534C6CD20}
+		{5C73B21B-66CF-4742-9A2F-60AC6E0CC31F} = {EB91D695-2267-46DF-9E1E-94FFF912016D}
+		{83973FBE-B91B-4982-ABF4-791661C6FE3F} = {EEC06C71-ABBF-4A72-822E-2BA6724431C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D07EAF07-A769-4282-8F73-D11B37D03713}
