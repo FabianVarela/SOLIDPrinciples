@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregation", "Int
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversion", "DependencyInversion\DependencyInversion.csproj", "{83973FBE-B91B-4982-ABF4-791661C6FE3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDPrinciplesConsole", "SOLIDPrinciplesConsole\SOLIDPrinciplesConsole.csproj", "{B53283FD-DA26-40EB-8081-A4B2FB7F14E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83973FBE-B91B-4982-ABF4-791661C6FE3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53283FD-DA26-40EB-8081-A4B2FB7F14E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53283FD-DA26-40EB-8081-A4B2FB7F14E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53283FD-DA26-40EB-8081-A4B2FB7F14E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53283FD-DA26-40EB-8081-A4B2FB7F14E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
