@@ -7,6 +7,8 @@
     using OpenClose.Class;
     using LiskovSubstitution;
     using InterfaceSegregation;
+    using DependencyInversion;
+    using DependencyInversion.Class;
 
     class Program
     {
@@ -17,6 +19,7 @@
             Console.WriteLine("2. Open Close");
             Console.WriteLine("3. Liskov Substitution");
             Console.WriteLine("4. Interface Segregation");
+            Console.WriteLine("5. Dependency Inversion");
 
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -32,6 +35,9 @@
                     break;
                 case 4:
                     ISP();
+                    break;
+                case 5:
+                    DIP();
                     break;
             }
 
@@ -168,6 +174,50 @@
 
             Console.WriteLine("**********PRODUCT**********");
             Console.WriteLine($"Selected product:\n{product}");
+        }
+
+        static void DIP()
+        {
+            Console.WriteLine("---------------Dependency Inversion Principle---------------");
+
+            Console.WriteLine("Select a notification type");
+            Console.WriteLine("1. Email");
+            Console.WriteLine("2. SMS");
+
+            int option = Convert.ToInt32(Console.ReadLine());
+
+            DIPNotifications notifications; 
+            string message = string.Empty;
+
+            switch (option)
+            {
+                case 1:
+                    Email email = new Email
+                    {
+                        ToAddress = "test@test.com",
+                        Subject = "This is an email message",
+                        Content = "Here put the message content to read hahahaha!!!"
+                    };
+
+                    notifications = new DIPNotifications(email);
+                    message = notifications.GetEmail();
+
+                    break;
+                case 2:
+                    SMS sms = new SMS
+                    {
+                        PhoneNumber = "+57 1 1234567890",
+                        Message = "This is a text message"
+                    };
+
+                    notifications = new DIPNotifications(sms);
+                    message = notifications.GetSMS();
+
+                    break;
+            }
+
+            Console.WriteLine("**********NOTIFICATION**********");
+            Console.WriteLine(message);
         }
     }
 }

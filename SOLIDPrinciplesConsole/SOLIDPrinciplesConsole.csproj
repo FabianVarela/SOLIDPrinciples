@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DependencyInversion\DependencyInversion.csproj" />
     <ProjectReference Include="..\InterfaceSegregation\InterfaceSegregation.csproj" />
     <ProjectReference Include="..\LiskovSubstitution\LiskovSubstitution.csproj" />
     <ProjectReference Include="..\OpenClose\OpenClose.csproj" />
