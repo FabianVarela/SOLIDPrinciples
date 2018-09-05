@@ -6,6 +6,7 @@
     using OpenClose;
     using OpenClose.Class;
     using LiskovSubstitution;
+    using InterfaceSegregation;
 
     class Program
     {
@@ -15,6 +16,7 @@
             Console.WriteLine("1. Single Responsibility");
             Console.WriteLine("2. Open Close");
             Console.WriteLine("3. Liskov Substitution");
+            Console.WriteLine("4. Interface Segregation");
 
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -27,6 +29,9 @@
                     break;
                 case 3:
                     LSP();
+                    break;
+                case 4:
+                    ISP();
                     break;
             }
 
@@ -136,6 +141,33 @@
             Console.WriteLine("**********RESULTS**********");
             Console.WriteLine($"Ellipse area: {ellipseArea}");
             Console.WriteLine($"Reactangle area: {rectangleArea}");
+        }
+
+        static void ISP()
+        {
+            Console.WriteLine("---------------Interface Segregation Principle---------------");
+
+            Console.WriteLine("Select a product");
+            Console.WriteLine("1. Jeans");
+            Console.WriteLine("2. Cap/Hat");
+
+            int option = Convert.ToInt32(Console.ReadLine());
+
+            ISPProducts products = new ISPProducts();
+            string product = string.Empty;
+
+            switch (option)
+            {
+                case 1:
+                    product = products.GetPants(123, 10, 123456789, 23, 34);
+                    break;
+                case 2:
+                    product = products.GetHat(234, 5, 987654321, 55);
+                    break;
+            }
+
+            Console.WriteLine("**********PRODUCT**********");
+            Console.WriteLine($"Selected product:\n{product}");
         }
     }
 }
